@@ -1,0 +1,7 @@
+footer {
+  flex-direction: row;
+  column-gap: 32px;
+  .location {
+    margin-bottom: 0;
+  }
+}

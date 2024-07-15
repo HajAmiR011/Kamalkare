@@ -1,0 +1,41 @@
+main {
+  height: auto;
+  background-color: aliceblue;
+  form {
+    display: block;
+    width: 350px;
+    height: fit-content;
+    background-color: lightgrey transparent;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 30px;
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border-radius: 5px;
+      margin: 18px 0;
+      outline: none;
+      border: 2px solid black;
+      font-size: 14px;
+      font-weight: 500;
+      &:focus {
+        border: 2px solid gray;
+      }
+    }
+    input[type="submit"] {
+      width: fit-content;
+      border: none;
+      font-weight: bold;
+      background-color: crimson;
+      color: white;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

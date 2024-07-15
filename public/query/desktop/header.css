@@ -1,0 +1,99 @@
+header {
+  width: 100%;
+  height: 103px;
+  .head_container {
+    .header_top {
+      width: 180px;
+      justify-content: flex-start;
+      .header_logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+    .header_buttom {
+      width: 82%;
+      display: flex;
+      justify-content: flex-start;
+      .svg-search {
+        display: none;
+      }
+      .svg-profile {
+        display: none;
+      }
+      nav {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 3px;
+        div {
+          width: fit-content;
+          height: fit-content;
+          position: relative;
+          display: flex;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 5px 15px;
+            transition: 300ms;
+            &:hover {
+              color: rgba(211, 211, 211, 0.555);
+            }
+          }
+          .menu_strip {
+            position: absolute;
+            background-color: #2b2b2b;
+            width: 11vw;
+            top: 32px;
+            height: auto;
+            z-index: 3;
+            display: none;
+            div {
+              width: 100%;
+              height: inherit;
+              a {
+                all: unset;
+                width: inherit;
+                height: 100%;
+                padding: 15px 20px;
+                text-decoration: none;
+                color: whitesmoke;
+                transition: 300ms;
+                &:hover {
+                  cursor: pointer;
+                  color: rgba(211, 211, 211, 0.555);
+                }
+              }
+            }
+          }
+          &:hover .menu_strip {
+            display: block;
+          }
+          &:hover a {
+            color: rgba(211, 211, 211, 0.555);
+          }
+        }
+        .icon-nav {
+          svg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          &:hover g {
+            fill: rgba(211, 211, 211, 0.555) !important;
+          }
+        }
+        .pipe {
+          height: 30px;
+          width: 2px;
+          background-color: #5b5b5b;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

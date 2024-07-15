@@ -1,0 +1,6 @@
+.image{
+    width: 100%;
+    height: 200px;
+    background-image: url("../../images/bk-img.jpg");
+    background-attachment: fixed;
+}
