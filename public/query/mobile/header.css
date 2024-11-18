@@ -31,9 +31,13 @@ header {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-      /* align-items: center; */
+      align-items: center;
       nav {
         display: none;
+      }
+      .svg-profile,
+      .svg-search {
+        cursor: pointer;
       }
     }
   }
